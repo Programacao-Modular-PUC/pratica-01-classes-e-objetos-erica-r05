@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pratica02;
-
+import java.util.Date;
 /**
  *
  * @author 1632233
@@ -15,6 +15,7 @@ public class Pessoa {
     private double altura;
     private double peso;
     private double imc;
+    private Data data_nascimento;
     
     public Pessoa(){
         
@@ -74,6 +75,10 @@ public class Pessoa {
 
     public void setImc(double imc) {
         this.imc = imc;
+    }
+    public int calculaIdade(){
+        Calendar c = Calendar.getInstance();
+        
     }
     public double CalculaIMC(double peso, double altura){
         imc = peso/Math.pow(altura, 2);
